@@ -25,7 +25,7 @@ section {
     background: rgb(40, 40, 40);
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(23, 23, 23);
+    background: rgb(18, 18, 18);
 }
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(30, 30, 30);
@@ -37,8 +37,8 @@ section {
     width: 10px;
     height: 100%;
     background: rgba(255, 255, 255, .05);
-} */
-/* #progressbar {
+}
+#progressbar {
     position: fixed;
     top: 0;
     right: 0;
@@ -57,8 +57,8 @@ section {
     height: 100%;
     background: linear-gradient(to top, #008aff, #00ffe7);
     filter: blur(10px);
-} */
-/* #progressbar:after {
+}
+#progressbar:after {
     content: '';
     position: absolute;
     top: 0;
@@ -80,25 +80,29 @@ section {
 }
 #particles-js {
     width: 100%;
-    height: 650px;
+    height: 800px;
     background: rgb(18, 18, 18);
     z-index: -1;
     margin-top: -450px;
 }
 .profile {
+    top: 90px;
     margin: auto;
-    width: 20rem;
+    width: 21rem;
     z-index: 2;
     position: relative;
 }
 .jumbotron {
-    padding-top: 12rem;
+    padding-top: 10rem;
 }
 .jumbotron h1 {
     margin-top: 10px;
 }
 #about {
     margin-top: 50px;
+}
+#about img {
+    width: 15rem;
 }
 #skill i {
     color: rgb(80, 80, 80);
@@ -205,7 +209,7 @@ section {
     opacity: 0;
 }
 #artwork {
-    padding-top: 100px;
+    margin-top: 50px;
 }
 #artwork .card-body {
     height: 80px;
@@ -231,7 +235,7 @@ section {
     box-sizing: border-box;
     border-top: 2px solid rgb(18, 18, 18);
     background-color: rgb(30, 30, 30);
-    transition: all .3s;
+    transition: all .2s;
 }
 #artwork .card-footer:hover {
     background-color: rgb(23, 23, 23);
@@ -249,8 +253,8 @@ section {
 }
 .borderfooter {
     width: 100%;
-    background: linear-gradient(to right, rgb(124,222,255) 0%, rgb(76,103,255) 45%,rgb(159,5,197) 90%);
     height: 10px;
+    background: linear-gradient(to right, rgb(124,222,255) 0%, rgb(76,103,255) 45%,rgb(159,5,197) 90%);
     animation: animate 5s linear infinite;
 }
 @keyframes animate {
@@ -295,12 +299,6 @@ section {
         width: 7%;
         right: 20px;
         bottom: 20px;
-    }
-    #about {
-        padding-top: 100px;
-    }
-    #skill {
-        padding-top: 100px;
     }
     .menu-toggle {
         display: flex;
