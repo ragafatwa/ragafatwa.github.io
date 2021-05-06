@@ -312,7 +312,7 @@ section {
         padding: 0;
         box-sizing: border-box;
         transform: translateX(100%);
-        transition: all .5s;
+        transition: all .3s;
         list-style: none;
         display: flex;
     }
@@ -321,6 +321,10 @@ section {
     }
     nav ul li{
         width: 100%;
+        transition: all .3s;
+    }
+    nav ul li:hover{
+        background-color: rgb(30, 30, 30);
     }
     .card {
         font-size: 14px;
