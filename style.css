@@ -312,7 +312,7 @@ section {
         padding: 0;
         box-sizing: border-box;
         transform: translateX(100%);
-        transition: all .3s;
+        transition: all .5s;
         list-style: none;
         display: flex;
     }

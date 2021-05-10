@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+  
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -23,7 +24,7 @@
     <div id="progressbar"></div>
     <div id="scrollPath"></div>
     <div class="cube">
-        <img src="assets/cube6.gif" id="cube">
+      <img src="assets/cube6.gif" id="cube">
     </div>
 
 
@@ -64,7 +65,7 @@
     <section class="jumbotron text-center" id="profile">
       <div class="profile">
         <h1 class="display-4">Raga Fatwa</h1>
-        <p class="lead">Student | Front End Dev</p>
+        <p class="lead">Front End Dev</p>
       </div>
     </section>
     <!-- Jumbotron End -->
@@ -76,7 +77,8 @@
                 <div class="col fs-5 section-header">About Me <span></span></div>
             </div>
             <div class="row justify-content-center text-center">
-              <img src="assets/profile.jpg" alt="thelazyraga" width="200" class="rounded-circle">
+              {% load static %}
+              <img src="{% static 'assets/profile.jpg' %}" alt="thelazyraga" width="200" class="rounded-circle">
               <div class="col-md-6 p-4">
                 A student who learn how to program and make website.
                 <br>
