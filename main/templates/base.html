@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Navbar Start -->
+{% block nav %}
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/#profile">
+            thelazyraga
+        </a>
+        <div id="navbarNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/#profile">Home</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="/#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/artwork">Artwork</a>
+            </li>
+                <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+{% endblock %}
+<!-- Navbar End -->
+
+
+<!-- Footer Start -->
+<section id="footer">
+    <div class="footer">
+        <div class="borderfooter"></div>
+        <div class="container">
+            <div class="row text-center pt-5">
+                <div class="col-md">
+                    <a href="/#profile"><img src="{% static 'images/thelazy.png' %}" alt="thelazyraga"></a>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-3">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li>
+                        <a href="/#profile">Home</a>
+                        </li>
+                        <li>
+                        <a href="/#about">About</a>
+                        </li>
+                        <li>
+                        <a href="/artwork">Artwork</a>
+                        </li>
+                        <li>
+                        <a href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3 ms-4 me-4">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <p>E-mail :</p>
+                            <a href="mailto:ragafatwa@gmail.com">ragafatwa@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Social Media</h4>
+                    <ul>
+                        <li><a href="https://www.instagram.com/ragafatwa" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+                        <li><a href="https://www.twitter.com/fagaratwa" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                        <li><a href="https://www.facebook.com/jacky.fatwa" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                        <li><a href="https://github.com/ragafatwa" target="_blank"><i class="fab fa-github-square fa-2x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- Footer End -->
+
+</body>
+</html>
