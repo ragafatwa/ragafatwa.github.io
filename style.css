@@ -243,6 +243,44 @@ section {
     text-decoration: none;
     color: rgb(254, 254, 254);
 }
+#project {
+    margin-top: 70px;
+}
+#project .card-body {
+    height: 80px;
+    background-color: rgb(30, 30, 30);
+    z-index: 2;
+}
+#project .card {
+    border: 0;
+    border-radius: 0;
+    overflow: hidden;
+}
+#project .card img {
+    border: 0;
+    border-radius: 0;
+    transition: all .5s;
+}
+#project .card img:hover {
+    transform: scale(1.2);
+}
+#project .card-footer {
+    padding: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    border-top: 2px solid rgb(18, 18, 18);
+    background-color: rgb(30, 30, 30);
+    transition: all .2s;
+}
+#project .card-footer:hover {
+    background-color: rgb(23, 23, 23);
+}
+#project .card-footer a {
+    padding: 7px;
+    display: block;
+    text-decoration: none;
+    color: rgb(254, 254, 254);
+}
 /* Footer */
 .footer {
     width: 100%;
@@ -280,7 +318,7 @@ section {
     color: rgb(254, 254, 254);
 }
 .footer p {
-    font-size: 14px;
+    font-size: 1rem;
     color: rgb(172, 172, 172);
     margin: 0;
 }
@@ -368,6 +406,9 @@ section {
         font-size: 14px;
     }
     .footer ul li a {
+        font-size: 12px;
+    }
+    .footer p {
         font-size: 12px;
     }
 }
