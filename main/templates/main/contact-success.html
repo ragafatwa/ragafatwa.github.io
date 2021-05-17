@@ -1,5 +1,4 @@
 {% load static %}
-{% load crispy_forms_tags %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -17,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1ece2eb0c7.js" crossorigin="anonymous"></script>
-    <title>Contact</title>
+    <title>Success!</title>
   </head>
 
   <body>
@@ -63,26 +62,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md">
-            <div class="text-center fs-5 mb-5 section-header">Contact Me <span></span></div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <form class="contact-form" action="contactform.php" method="POST">
-              {{ form|crispy }}
-              <div class="mb-3">
-                <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Name">
-              </div>
-              <div class="mb-3">
-                <input type="email" class="form-control" id="email" placeholder="Email">
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
-              </div>
-              <div class="text-end">
-                <button type="submit" class="btn">Submit</button>
-              </div>
-            </form>
+            <div class="text-center fs-5 mb-5 section-header">Success! <span></span></div>
           </div>
         </div>
       </div>
