@@ -100,6 +100,7 @@ section {
 }
 #about img {
     width: 15rem;
+    height: auto;
 }
 #skill i {
     color: rgb(80, 80, 80);
@@ -205,6 +206,16 @@ section {
     transform: scale(0);
     opacity: 0;
 }
+.toggle-anim1 {
+    transform: rotate(0) translate(0px,0px);
+}
+.toggle-anim2 {
+    transform: rotate(0) translate(0px,0px);
+}
+.toggle-anim3 {
+    transform: scale(1);
+    opacity: 1;
+}
 #artwork {
     margin-top: 70px;
 }
@@ -224,7 +235,7 @@ section {
     transition: all .5s;
 }
 #artwork .card img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 #artwork .card-footer {
     padding: 0;
@@ -262,7 +273,7 @@ section {
     transition: all .5s;
 }
 #project .card img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 #project .card-footer {
     padding: 0;
