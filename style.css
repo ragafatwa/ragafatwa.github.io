@@ -71,6 +71,9 @@ section {
 .cube {
     position: relative;
 }
+.cube a {
+    cursor: default;
+}
 #cube {
     z-index: 100;
     position: fixed;
@@ -100,10 +103,17 @@ section {
 }
 #about img {
     width: 15rem;
+    height: auto;
 }
 #skill i {
     color: rgb(80, 80, 80);
     transition: all .2s;
+}
+#skill .col-6:nth-child(6) {
+    margin-top: 3rem;
+}
+#skill .col-6:nth-child(7) {
+    margin-top: 3rem;
 }
 #skill i:hover {
     color: rgb(254, 254, 254);
@@ -128,6 +138,45 @@ section {
     transition: all .2s;
 }
 #social i:hover {
+    color: rgb(254, 254, 254);
+}
+#contact p {
+    font-size: 1rem;
+    color: rgb(254, 254, 254);
+    margin: auto;
+    text-align: center;
+}
+#contact ul {
+    text-decoration: none;
+    text-align: center;
+    padding: 0;
+}
+#contact .email li {
+    list-style: none;
+    margin: 0;
+}
+#contact .social li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+}
+#contact ul li:not(:first-child) {
+    margin-left: 10px;
+}
+#contact ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(151, 151, 151);
+    transition: all .2s;
+}
+#contact ul li a:hover {
+    color: rgb(254, 254, 254);
+}
+#contact i {
+    color: rgb(80, 80, 80);
+    transition: all .2s;
+}
+#contact i:hover {
     color: rgb(254, 254, 254);
 }
 #name {
@@ -195,13 +244,23 @@ section {
 .menu-toggle span:nth-child(4){
     transform-origin: 0 100%;
 }
-.menu-toggle input:checked ~ span:nth-child(2) {
+/* .menu-toggle input:checked ~ span:nth-child(2) {
     transform: rotate(45deg) translate(-1px,-1px);
 }
 .menu-toggle input:checked ~ span:nth-child(4) {
     transform: rotate(-45deg) translate(-1px,0px);
 }
 .menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+} */
+.toggle-anim1 {
+    transform: rotate(45deg) translate(-1px,-1px);
+}
+.toggle-anim2 {
+    transform: rotate(-45deg) translate(-1px,0px);
+}
+.toggle-anim3 {
     transform: scale(0);
     opacity: 0;
 }
@@ -224,7 +283,7 @@ section {
     transition: all .5s;
 }
 #artwork .card img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 #artwork .card-footer {
     padding: 0;
@@ -262,7 +321,7 @@ section {
     transition: all .5s;
 }
 #project .card img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 #project .card-footer {
     padding: 0;
@@ -280,6 +339,13 @@ section {
     display: block;
     text-decoration: none;
     color: rgb(254, 254, 254);
+}
+#tutorial .container{
+    width: 70%;
+}
+#tutorial ol img {
+    width: 400px;
+    margin-bottom: 50px;
 }
 /* Footer */
 .footer {
@@ -330,9 +396,24 @@ section {
 .footer img {
     width: 300px;
 }
+#error404 p {
+    font-size: 1rem;
+    color: rgb(254, 254, 254);
+    margin: auto;
+    text-align: center;
+}
+#error404 a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(151, 151, 151);
+    transition: all .2s;
+}
+#error404 a:hover {
+    color: rgb(254, 254, 254);
+}
 @media only screen and (max-width: 1000px) {
     #cube {
-        width: 7%;
+        width: 10%;
         right: 20px;
         bottom: 20px;
     }
@@ -366,6 +447,12 @@ section {
     }
     .card {
         font-size: 14px;
+    }
+    #skill .col-6:nth-child(6) {
+        margin-top: 15px;
+    }
+    #skill .col-6:nth-child(7) {
+        margin-top: 15px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -410,6 +497,12 @@ section {
     }
     .footer p {
         font-size: 12px;
+    }
+    #skill .col-6:nth-child(7) {
+        margin-top: 0;
+    }
+    #tutorial ol img {
+        width: 100%;
     }
 }
 @media only screen and (max-width: 300px) {
