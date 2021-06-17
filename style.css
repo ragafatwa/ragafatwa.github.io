@@ -264,6 +264,16 @@ section {
     transform: scale(0);
     opacity: 0;
 }
+.toggle-anim1 {
+    transform: rotate(0) translate(0px,0px);
+}
+.toggle-anim2 {
+    transform: rotate(0) translate(0px,0px);
+}
+.toggle-anim3 {
+    transform: scale(1);
+    opacity: 1;
+}
 #artwork {
     margin-top: 70px;
 }
